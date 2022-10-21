@@ -218,6 +218,7 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem 1rem;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -263,6 +264,7 @@ footer {
     }
 
     footer {
+        margin-top: 0;
         font-size: 0.7rem;
     }
 }
