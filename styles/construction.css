@@ -290,4 +290,8 @@ main {
     .plan-price {
         font-size: 1.1rem;
     }
+
+    .more-info p {
+        padding: 0 1rem;
+    }
 }
