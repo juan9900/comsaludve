@@ -19,6 +19,7 @@ html {
     --primary: #265785;
     --primaryDark: #003a70;
     --secondary: #26a9c9;
+    --textDark: #303030;
 }
 
 img {
@@ -211,6 +212,13 @@ main {
     margin-right: 0.5rem;
 }
 
+footer {
+    background-color: #fff;
+    color: var(--textDark);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
 
 @media screen and (max-width: 800px) {
     body {
@@ -252,6 +260,10 @@ main {
         margin: 1rem 0 0 0;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+    }
+
+    footer {
+        font-size: 0.7rem;
     }
 }
 
@@ -295,3 +307,8 @@ main {
         padding: 0 1rem;
     }
 }
+
+/* 
+.logo-container {
+    background: linear-gradient(90deg, #000 50%, #fff 50%);
+} */
