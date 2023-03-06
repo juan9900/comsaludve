@@ -11,51 +11,174 @@
   <script src="https://kit.fontawesome.com/701b1fbb0c.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/construction.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/styles.css">
 
   <title>Comsaludve</title>
 </head>
 
 <body>
-  <main class="container">
-    <div class="logo-container">
-      <img src="/assets/img/logo-comsalud.png" alt="logo comsalud">
-    </div>
-    <p class="construction-message"><span>Página </span>en construcción</p>
-    <div class="plans-container container">
-      <div class="plan">
-        <p class="plan-title text-center">Plan <span>Esencial</span></p>
-        <p class="cobertura">Cobertura</p>
-        <p class="plan-price">$2.000</p>
-      </div>
-      <div class="plan">
-        <p class="plan-title text-center">Plan <span>Salud Ya</span></p>
-        <p class="cobertura">Cobertura</p>
-        <p class="plan-price">$15.000</p>
-      </div>
-      <div class="plan">
-        <p class="plan-title text-center">Plan <br> <span>Salud Total</span></p>
-        <p class="cobertura">Cobertura</p>
-        <p class="plan-price">$25.000</p>
-      </div>
-      <div class="plan">
-        <p class="plan-title text-center">Plan <br><span>Salud Senior</span></p>
-        <p class="cobertura">Cobertura</p>
-        <p class="plan-price">$15.000</p>
-      </div>
-    </div>
+  <header>
 
-    <a href="https://wa.link/xeydja" target="_blank" class="phone btn-outline"><i class="fa-brands fa-whatsapp"></i>0424-6098372</a>
-    <a href="https://www.instagram.com/comsaludve/" target="_blank" class="more-info">
-      <p>Haz click aquí para mayor información</p> <span><i class="fa-brands fa-square-instagram"></i>
-        <p>@comsaludve</p>
-      </span>
-    </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/logo-comsalud-2.png" alt="Logo Comsalud">
+        </a>
+
+
+        <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Misión</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Objetivos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <section id="section-mission" class="position-relative d-flex flex-column justify-content-center">
+      <div class="mission-container">
+        <h2 class="section-title">Misión</h2>
+        <p>Somos una empresa afiliada al Complejo Médico San Lucas, creada para marcar la diferencia en planes de salud. Distinguida y competitiva en la actualidad de cuidados médicos, ajustando su crecimiento a las exigencias mundiales y formando parte del concepto de globalización de la salud.</p>
+      </div>
+      <img src="/assets/img/flecha-2.png" class="mision-flecha" alt="flecha">
+
+      <div class="socials d-flex flex-row flex-lg-column justify-content-between">
+
+        <a class="social" href="#" target="_blank"><img src="/assets/img/Facebook.png" alt="social facebook"></a>
+        <a class="social" href="#" target="_blank"><img src="/assets/img/Instagram .png" alt="social instagram"></a>
+        <a class="social" href="#" target="_blank"><img src="/assets/img/Twitter.png" alt="social Twitter.png"></a>
+
+
+      </div>
+    </section>
+    <section id="section-objectives">
+      <h2 class="text-center">Objetivos</h2>
+      <div class="d-flex flex-column flex-lg-row pl-5 pr-5">
+        <div class="objective d-flex flex-column justify-content-start align-items-center">
+          <img src="/assets/img/corazon.png" alt="objective heart">
+          <p>Solventar los problemas comunes del paciente sin complicaciones, reduciendo la espera y brindando un servicio de calidad.</p>
+        </div>
+        <div class="objective d-flex flex-column justify-content-start align-items-center">
+          <img src="/assets/img/resonancia-magnetica.png" alt="objective heart">
+          <p>Atender integralmente al paciente que necesite algún estudio especializado.</p>
+        </div>
+        <div class="objective d-flex flex-column justify-content-start align-items-center">
+          <img src="/assets/img/dinero.png" alt="objective heart">
+          <p>Mejorar el impacto del costo de salud en la poblacion.</p>
+        </div>
+        <div class="objective d-flex flex-column justify-content-start align-items-center">
+          <img src="/assets/img/apreton-de-manos.png" alt="objective heart">
+          <p>Mejorar la calidad del servicio.</p>
+        </div>
+      </div>
+    </section>
+    <section id="section-plans">
+      <h2 class="text-center">Planes</h2>
+      <div class="d-flex flex-column flex-lg-row plans-container">
+        <div class="plan plan-1 d-flex flex-column align-items-center justify-content-between">
+          <div class="plan-image-container position-relative">
+            <img src="/assets/img/plan-1.jpg" alt="plan image">
+            <div class="overlay-primary"></div>
+            <h3>Plan <br> esencial</h3>
+          </div>
+          <p class="plan-price">
+            $2.000
+          </p>
+          <p class="monthly-price">
+            COSTO<br>MENSUAL $10
+          </p>
+        </div>
+        <div class="plan plan-2 d-flex flex-column align-items-center justify-content-between">
+          <div class="plan-image-container position-relative">
+            <img src="/assets/img/plan-2.jpg" alt="plan image">
+            <div class="overlay-secondary"></div>
+            <h3>Plan <br> Salud Total</h3>
+          </div>
+          <p class="plan-price">
+            $25.000
+          </p>
+          <p class="monthly-price">
+            COSTO<br>MENSUAL $35
+          </p>
+        </div>
+        <div class="plan plan-3 d-flex flex-column align-items-center justify-content-between">
+          <div class="plan-image-container position-relative">
+            <img class="plan-img" src="/assets/img/plan-3.jpg" alt="plan image">
+            <div class="overlay-primary"></div>
+            <h3>Plan <br> Salud Ya</h3>
+          </div>
+          <p class="plan-price">
+            $15.000
+          </p>
+          <p class="monthly-price">
+            COSTO<br>MENSUAL $25
+          </p>
+        </div>
+        <div class="plan plan-4 d-flex flex-column align-items-center justify-content-between">
+          <div class="plan-image-container position-relative">
+            <img src="/assets/img/plan-4.jpg" alt="plan image">
+            <div class="overlay-secondary"></div>
+            <h3>Plan <br> Total Senior</h3>
+          </div>
+          <p class="plan-price">
+            $15.000
+          </p>
+          <p class="monthly-price">
+            COSTO<br>MENSUAL $75
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- <section id="section-register">
+      <h2>Registrate Aquí</h2>
+      <form action="">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+        <label for="lastName">Apellido</label>
+        <input type="text" name="lastName" id="lastName">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+
+      </form>
+    </section> -->
   </main>
 
-  <footer>
-    <p>2022, Comsalud | Copyright &copy Desarrollado por MDN PUBLICIDAD</p>
-  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script>
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
+  </script>
 </body>
 
 </html>
