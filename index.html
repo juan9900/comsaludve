@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Planes de medicina que se ajustan a tus necesidades. Respaldados por 25 años de trayectoria de la Clínica San Lucas.">
+  <meta name="description" content="Somos una empresa afiliada al Complejo Médico San Lucas, creada para marcar la diferencia en planes de salud. Distinguida y competitiva en la actualidad de cuidados médicos, ajustando su crecimiento a las exigencias mundiales y formando parte del concepto de globalización de la salud.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://kit.fontawesome.com/701b1fbb0c.js" crossorigin="anonymous"></script>
@@ -36,14 +36,14 @@
               <a class="nav-link active" aria-current="page" href="#">Misión</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Objetivos</a>
+              <a class="nav-link" href="#section-objectives">Objetivos</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Planes</a>
+              <a class="nav-link" href="#section-plans">Planes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#section-contact">Contacto</a>
             </li>
           </ul>
 
@@ -56,7 +56,7 @@
   <main class="">
     <section id="section-mission" class="position-relative d-flex flex-column justify-content-center">
       <div class="mission-container">
-        <h2 class="section-title">Misión</h2>
+        <h1 class="section-title">Misión</h1>
         <p>Somos una empresa afiliada al Complejo Médico San Lucas, creada para marcar la diferencia en planes de salud. Distinguida y competitiva en la actualidad de cuidados médicos, ajustando su crecimiento a las exigencias mundiales y formando parte del concepto de globalización de la salud.</p>
       </div>
       <img src="/assets/img/flecha-2.png" class="mision-flecha" alt="flecha">
@@ -64,7 +64,7 @@
       <div class="socials d-flex flex-row flex-lg-column justify-content-between">
 
         <a class="social" href="#" target="_blank"><img src="/assets/img/Facebook.png" alt="social facebook"></a>
-        <a class="social" href="#" target="_blank"><img src="/assets/img/Instagram .png" alt="social instagram"></a>
+        <a class="social" href="#" target="_blank"><img src="/assets/img/instagram.png" alt="social instagram"></a>
         <a class="social" href="#" target="_blank"><img src="/assets/img/Twitter.png" alt="social Twitter.png"></a>
 
 
@@ -74,7 +74,7 @@
       <h2 class="text-center">Objetivos</h2>
       <div class="d-flex flex-column flex-lg-row pl-5 pr-5">
         <div class="objective d-flex flex-column justify-content-start align-items-center">
-          <img src="/assets/img/corazon.png" alt="objective heart">
+          <img src="/assets/img/corazon-nuevo.png" alt="objective heart">
           <p>Solventar los problemas comunes del paciente sin complicaciones, reduciendo la espera y brindando un servicio de calidad.</p>
         </div>
         <div class="objective d-flex flex-column justify-content-start align-items-center">
@@ -91,7 +91,10 @@
         </div>
       </div>
     </section>
-    <section id="section-plans">
+    <section id="section-plans" class="position-relative d-flex flex-column justify-content-between">
+      <img class="reverse-arrow background-arrow" src="/assets/img/flecha-2.png" alt="flecha adorno">
+      <img class="background-arrow" src="/assets/img/flecha-2.png" alt="flecha adorno">
+
       <h2 class="text-center">Planes</h2>
       <div class="d-flex flex-column flex-lg-row plans-container">
         <div class="plan plan-1 d-flex flex-column align-items-center justify-content-between">
@@ -147,22 +150,93 @@
           </p>
         </div>
       </div>
+      <p class="text-secondary text-center mt-5">Haz click en uno de nuestros planes para ver mas información</p>
+
+    </section>
+    <section id="section-services">
+      <h2 class="text-center">Servicios y testimonios</h2>
+      <div class="videos-container d-flex flex-column flex-lg-row">
+
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jU6KUBCy2l8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sCLP3-ogIZY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/T-XWg3F7zLo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+      </div>
     </section>
 
 
-
-    <!-- <section id="section-register">
+    <section id="section-register" class="d-flex flex-column align-items-center justify-content-between">
       <h2>Registrate Aquí</h2>
-      <form action="">
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name">
-        <label for="lastName">Apellido</label>
-        <input type="text" name="lastName" id="lastName">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
+      <form action="" class="form-register d-flex flex-column align-items-center justify-content-between">
+        <div class="mb-2 w-100 d-flex flex-column">
+          <label for="name">Nombre</label>
+          <input type="text" placeholder="John" name="name" id="name">
+        </div>
+        <div class="mb-2 w-100 d-flex flex-column">
+          <label for="lastName">Apellido</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Doe">
+        </div>
 
+        <div class="mb-2 w-100 d-flex flex-column">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+        </div>
+        <div class="mb-3 w-100 d-flex flex-column">
+          <label for="email">Teléfono</label>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">+58</span>
+            <input type="text" class="form-control" placeholder="04241234567" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <input class="btn-register" type="submit" value="Registrar">
       </form>
-    </section> -->
+    </section>
+    <footer id="section-contact">
+      <div class="d-flex flex-row align-items-center justify-content-between footer-container">
+        <div class="d-flex flex-row align-items-start info-container">
+          <img class="map-icon" src="/assets/img/pin-de-ubicacion.png" alt="pin de ubicacion">
+
+          <div class="direction ml-0 ml-lg-4 d-flex flex-column">
+
+            <div class="d-flex flex-row align-items-center">
+              <div>
+                <h4>DIRECCIÓN:</h4>
+                <p>Av. 17 Baralt con calle 69A, <br>casa nro. 69-02, <br>Maracaibo, Edo. Zulia</p>
+              </div>
+            </div>
+
+            <div class="contact-container">
+              <h4>CONTACTO</h4>
+              <div class="d-flex flex-column justify-content-start">
+                <div class="d-flex flex-row justify-content-start align-items-center footer-social">
+                  <img src="/assets/img/whatsapp.png" alt="logo whatsapp">
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=584246098372">0424-6098372</a>
+                </div>
+                <div class="d-flex flex-row justify-content-start align-items-center footer-social">
+                  <img src="/assets/img/correo.png" alt="logo whatsapp">
+                  <a target="_blank" href="mailto:info@comsalud.com">info@comsalud.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-container position-relative">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8466876910875!2d-71.62741006294243!3d10.669005765867993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e899918cc108983%3A0x5983e33058fcc423!2sCentro%20Medico%20Baralt!5e0!3m2!1sen!2sve!4v1678127290769!5m2!1sen!2sve" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+
+
+    </footer>
   </main>
 
 
