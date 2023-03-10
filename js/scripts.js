@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('#modal-plan-2').modal('show');
     $('#plan-1').on('click', function(){
         $('#modal-plan-1').modal('show');
     })

@@ -425,6 +425,11 @@ header nav {
   color: var(--secondary);
   font-family: "sfBold";
 }
+
+.text-secondary.modal-monthly {
+  font-size: 1.3em;
+  font-family: "sfBold";
+}
 /* SECTION SERVICES AND TESTIMONIALS */
 #section-services {
   padding-bottom: 4rem;
