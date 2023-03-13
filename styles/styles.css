@@ -378,13 +378,10 @@ header nav {
   font-size: 1.05em;
 }
 
-.separator {
-  flex: 1;
-  /* background-color: red; */
-  border-bottom: 3px dotted var(--grayText);
-  position: relative;
-  top: 50%;
-  transform: translateY(-25%);
+.modal-list-item > div {
+  background: rgb(239, 239, 239);
+  padding: 0.3rem 1rem;
+  border-radius: 0.3rem;
 }
 
 /* .list-dotted li p:not(:last-child) {
@@ -664,6 +661,9 @@ footer iframe {
 }
 
 @media screen and (min-width: 3000px) {
+  .mision-flecha {
+    height: 50%;
+  }
   .socials {
     width: 3%;
   }
@@ -675,6 +675,10 @@ footer iframe {
   }
   .plan {
     margin: 0 1.5rem;
+  }
+
+  .background-arrow {
+    width: 3%;
   }
   .videos-container {
     width: 55%;
@@ -808,6 +812,34 @@ footer iframe {
 }
 
 @media screen and (max-width: 780px) {
+  .text-secondary.scroll-text {
+    font-size: 1em;
+  }
+
+  .modal-list-item {
+    align-items: center !important;
+  }
+  .modal-list-item img {
+    display: none;
+  }
+
+  .modal-list-item p {
+    font-size: 0.95em;
+  }
+  .modal-list-item p:first-of-type {
+    padding: 0 0.5rem;
+    flex: 1;
+  }
+
+  .modal-list-item p:last-of-type {
+    font-size: 0.8em;
+    text-align: right;
+    flex: 1;
+  }
+
+  .modal-list-item > div {
+    background: rgb(234, 234, 234);
+  }
   /* SECTION OBJECTIVES */
   #section-objectives h2 {
     margin-bottom: 4rem;
