@@ -780,8 +780,14 @@ footer iframe {
     width: 25%;
   }
 
-  .text-secondary {
+  /* .text-secondary {
     font-size: 1.6em;
+  } */
+
+  .text-secondary .text-click {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .plans-container {
