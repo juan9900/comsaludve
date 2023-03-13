@@ -8,8 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lastName = $_POST['lastName'];
     $phoneNumber = test_input($_POST['phoneNumber']);
     $email = test_input($_POST['email']);
-    $birthdate = test_input($_POST['birthdate']);
-    $subscribedForno = 1;
     $errors = [];
 
     if (preg_match('~[0-9]+~', $firstName)) {
@@ -97,13 +95,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $lastName = ucwords(strtolower($lastName));
 
         //ADD NEW USER
-        $sql = "INSERT INTO clients (firstName, lastName, phoneNumber, email, subscribedForno, birthdate) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO clients (firstName, lastName, phoneNumber, email) VALUES (?, ?, ?, ?)";
         if (!$stmt = $db->prepare($sql)) {
 
             array_push($errors, 'Error preparando sql 2' . $db->errno . $db->error);
         }
 
-        if (!$stmt->bind_param("ssssis", $firstName, $lastName, $phoneNumber, $email, $subscribedForno, $birthdate)) {
+        if (!$stmt->bind_param("ssss", $firstName, $lastName, $phoneNumber, $email)) {
             array_push($errors, 'Error binding sql 2' . $stmt->errno . $stmt->error);
         }
 
@@ -155,7 +153,7 @@ function test_input($data)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documendt</title>
 </head>
 
 <body>

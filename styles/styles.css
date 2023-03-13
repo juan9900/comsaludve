@@ -13,31 +13,31 @@
 
 @font-face {
   font-family: "sfBlack";
-  src: url("/assets/fonts/sf-ui-display-black.otf");
+  src: url("../assets/fonts/sf-ui-display-black.otf");
 }
 @font-face {
   font-family: "sfBold";
-  src: url("/assets/fonts/sf-ui-display-bold.otf");
+  src: url("../assets/fonts/sf-ui-display-bold.otf");
 }
 @font-face {
   font-family: "sfHeavy";
-  src: url("/assets/fonts/sf-ui-display-heavy.otf");
+  src: url("../assets/fonts/sf-ui-display-heavy.otf");
 }
 @font-face {
   font-family: "sfLight";
-  src: url("/assets/fonts/sf-ui-display-light.otf");
+  src: url("../assets/fonts/sf-ui-display-light.otf");
 }
 @font-face {
   font-family: "sfMedium";
-  src: url("/assets/fonts/sf-ui-display-medium.otf");
+  src: url("../assets/fonts/sf-ui-display-medium.otf");
 }
 @font-face {
   font-family: "sfSemiBold";
-  src: url("/assets/fonts/sf-ui-display-semibold.otf");
+  src: url("../assets/fonts/sf-ui-display-semibold.otf");
 }
 @font-face {
   font-family: "sfThin";
-  src: url("/assets/fonts/sf-ui-display-thin.otf");
+  src: url("../assets/fonts/sf-ui-display-thin.otf");
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -78,7 +78,7 @@ header nav {
 }
 /* SECTION MISSION */
 #section-mission {
-  background: URL("/assets/img/fondo-mision.jpg");
+  background: URL("../assets/img/fondo-mision.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ header nav {
 /* SECTION OBJECTIVES */
 #section-objectives {
   background-color: red;
-  background: url("/assets/img/fondo-objetivos.jpg");
+  background: url("../assets/img/fondo-objetivos.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,26 +239,26 @@ header nav {
 }
 
 .plan-1 .plan-image-container {
-  background: url("/assets/img/plan-1.jpg");
+  background: url("../assets/img/plan-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .plan-2 .plan-image-container {
-  background: url("/assets/img/plan-2.jpg");
+  background: url("../assets/img/plan-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .plan-3 .plan-image-container {
-  background: url("/assets/img/plan-3.jpg");
+  background: url("../assets/img/plan-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .plan-4 .plan-image-container {
-  background: url("/assets/img/plan-4.jpg");
+  background: url("../assets/img/plan-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -335,7 +335,7 @@ header nav {
   );
   color: var(--offWhite);
   width: fit-content;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin: 0 auto;
   border-radius: 10rem;
   font-family: "sfHeavy";
@@ -459,7 +459,7 @@ header nav {
 }
 /* SECTION REGISTER */
 #section-register {
-  background: url("/assets/img/fondo-registrate.jpg");
+  background: url("../assets/img/fondo-registrate.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -472,7 +472,8 @@ header nav {
   text-transform: uppercase;
 }
 
-.form-register {
+.form-register,
+#liveAlertPlaceholder {
   width: 25%;
 }
 
@@ -482,6 +483,11 @@ header nav {
   width: 100%;
   border: 2px solid transparent;
   font-family: "sfLight";
+  color: #000;
+}
+
+.form-register input[type="submit"] {
+  color: #fff;
 }
 
 .form-register input:focus {
@@ -574,7 +580,10 @@ footer iframe {
   color: var(--offWhite);
   text-decoration: none;
 }
-
+.footer-mdn {
+  background: var(--offWhite);
+  color: var(--grayText);
+}
 @media screen and (min-width: 1024px) {
   .mission-container {
     max-width: 50%;
@@ -603,7 +612,8 @@ footer iframe {
     width: 50%;
   }
 
-  .form-register {
+  .form-register,
+  #liveAlertPlaceholder {
     width: 30%;
   }
 
@@ -684,7 +694,8 @@ footer iframe {
     width: 55%;
   }
 
-  .form-register {
+  .form-register,
+  #liveAlertPlaceholder {
     width: 20%;
   }
 
@@ -794,7 +805,8 @@ footer iframe {
     height: 20rem;
   }
 
-  .form-register {
+  .form-register,
+  #liveAlertPlaceholder {
     width: 50%;
   }
 
@@ -826,12 +838,15 @@ footer iframe {
   .modal-list-item p {
     font-size: 0.95em;
   }
+  .modal-list-item:nth-of-type(1) {
+    text-align: left;
+  }
   .modal-list-item p:first-of-type {
     padding: 0 0.5rem;
     flex: 1;
   }
 
-  .modal-list-item p:last-of-type {
+  .plan-period {
     font-size: 0.8em;
     text-align: right;
     flex: 1;
@@ -880,6 +895,11 @@ footer iframe {
     height: 100%;
   }
 
+  .modal-link-container {
+    width: 100%;
+    flex: 1;
+  }
+
   /* SECTION SERVICES AND TESTIMONIALS */
   #section-services h2 {
     width: 90%;
@@ -894,7 +914,8 @@ footer iframe {
     margin: 0;
   }
 
-  .form-register {
+  .form-register,
+  #liveAlertPlaceholder {
     width: 80%;
   }
 

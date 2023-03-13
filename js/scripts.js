@@ -13,37 +13,38 @@ $(document).ready(function(){
     })
 })
 
-// Enviar suscripcion al club forno
-$('#club-form').on('submit',(e) => {
+const alertPlaceholder = $('#liveAlertPlaceholder')
+var timerCloseAlert;
+// Enviar suscripcion a cotizacion
+$('#quotation-form').on('submit',(e) => {
+    console.log('hola');
     firstName = $('#firstName').val();
     lastName = $('#lastName').val();
     email = $('#email').val();
     phoneNumber = $('#phoneNumber').val();
-    birthdate = $('#birthdate').val();
-    
     e.preventDefault();
+    
     $.ajax({
         type: "POST",
-        url: '/modules/addClient.php',
+        url: './modules/addQuotation.php',
         data: {
             firstName,
             lastName,
             email,
             phoneNumber,
-            birthdate,
         },
         dataType: 'json',
         success: (response) => {
             if(response.status === 'success'){
-                $('.club-form-container').addClass('d-none');
-                $('.subscribed-text').removeClass('d-none');
+                $('.register-form-container').addClass('d-none');
+                $('.user-registered-container').removeClass('d-none');
             }else{
                 alert(response.errors,'danger');
                 timer = setTimeout(() => {
                     $('#liveAlertPlaceholder').fadeOut(500, function(){
                         $(this).empty().show();
                     })
-                },4000)
+                },400000)
             }
         },
         error: (error) => {
@@ -66,9 +67,9 @@ const alert = (message, type) => {
     
     const wrapper = document.createElement('div')
     wrapper.innerHTML = [
-        `<div class="alert alert-${type} alert-dismissible mb-0" role="alert" id="alert">`,
-        `   <div>${message.join("<p></p>")}</div>`,
-        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        `<div class="alert alert-${type}  mb-2" role="alert" id="alert">`,
+        `   <div class="m-auto w-100">${message.join("<p></p>")}</div>`,
+        
         '</div>'
     ].join('')
 

@@ -27,8 +27,8 @@ $subscribedForno = 1;
 
     <div>
         <main class="col-11 m-auto col-lg-9 mt-4">
-            <h1>CLUB FORNO</h1>
-            <h2>Clientes suscritos: <?php echo $totalClients ?></h2>
+            <h1>Cotizaciones COMSALUD</h1>
+            <h2>Clientes registrados: <?php echo $totalClients ?></h2>
             <p>Logueado como: <?php echo $_SESSION['name'] ?>
 
                 <?php if ($_SESSION['level'] == 'read') {
@@ -45,8 +45,7 @@ $subscribedForno = 1;
                         <!-- <th scope="col" class="fw-bold">Cédula</th> -->
                         <th scope="col" class="fw-bold">Teléfono</th>
                         <th scope="col" class="fw-bold">Correo Electrónico</th>
-                        <th scope="col" class="fw-bold">Fecha de suscripción</th>
-                        <th scope="col" class="fw-bold">Fecha de nacimiento</th>
+                        <th scope="col" class="fw-bold">Fecha de Registro</th>
 
                         <?php
                         if ($_SESSION['level'] == 'write') {
@@ -90,11 +89,10 @@ $subscribedForno = 1;
                             <td class="d-none exclude"><?php echo $client['id'] ?></td>
                             <td data-title="Nombre:"><?php echo $client['firstName'] ?></td>
                             <td data-title="Apellido:"><?php echo $client['lastName'] ?></td>
-                            <!-- <td data-title="Cédula:"><?php echo $client['identification'] ?></td> -->
                             <td data-title="Teléfono:"><?php echo $client['phoneNumber'] ?></td>
                             <td data-title="Correo"><?php echo $client['email'] ?></td>
-                            <td data-title="Suscripción"><?php echo $client['subscriptionDate'] ?></td>
-                            <td data-title="Nacimiento"><?php echo $client['birthdate'] ?></td>
+
+                            <td data-title="Registro"><?php echo $client['subscriptionDate'] ?></td>
 
                             <?php if ($_SESSION['level'] == 'write') { ?>
                                 <td class="d-flex justify-content-center align-items-center exclude" data-title="Acción"><button class="table-button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-delete-client"><i class="fa-solid fa-trash"></i></button></td>
@@ -108,14 +106,12 @@ $subscribedForno = 1;
             </table>
 
             <?php
-            $sql = 'SELECT COUNT(*) as clientsCount FROM clients WHERE subscribedForno = ?';
+            $sql = 'SELECT COUNT(*) as clientsCount FROM clients ';
             if (!($stmt = $db->prepare($sql))) {
                 echo "Prepare failed: (" . $db->errno . ") " . $db->error;
             }
 
-            if (!$stmt->bind_param('i', $subscribedForno)) {
-                echo "Binding parameters failed: (" . $stmt->errno . ") " . $stmt->error;
-            }
+
 
             if (!$stmt->execute()) {
                 echo "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
@@ -207,10 +203,9 @@ $subscribedForno = 1;
             <tr>
                 <th scope="col" class="fw-bold">Nombre</th>
                 <th scope="col" class="fw-bold">Apellido</th>
-                <!-- <th scope="col" class="fw-bold">Cédula</th> -->
                 <th scope="col" class="fw-bold">Teléfono</th>
                 <th scope="col" class="fw-bold">Correo Electrónico</th>
-                <th scope="col" class="fw-bold">Fecha de suscripción</th>
+                <th scope="col" class="fw-bold">Fecha de Registro</th>
             </tr>
         </thead>
         <tbody class="clients-body">

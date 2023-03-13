@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "sfBlack";
+  src: url("../assets/fonts/sf-ui-display-black.otf");
+}
+@font-face {
+  font-family: "sfBold";
+  src: url("../assets/fonts/sf-ui-display-bold.otf");
+}
+@font-face {
+  font-family: "sfHeavy";
+  src: url("../assets/fonts/sf-ui-display-heavy.otf");
+}
+@font-face {
+  font-family: "sfLight";
+  src: url("../assets/fonts/sf-ui-display-light.otf");
+}
+@font-face {
+  font-family: "sfMedium";
+  src: url("../assets/fonts/sf-ui-display-medium.otf");
+}
+@font-face {
+  font-family: "sfSemiBold";
+  src: url("../assets/fonts/sf-ui-display-semibold.otf");
+}
+@font-face {
+  font-family: "sfThin";
+  src: url("../assets/fonts/sf-ui-display-thin.otf");
+}
+
+:root {
+  --primary: #4d97bb;
+  --primaryDarker: #387694;
+  --primaryOpacity: #4d97bb43;
+}
+
+body {
+  font-family: "sfLight";
+}
+h1 {
+  color: var(--primary);
+  font-family: "sfMedium";
+}
+
+h2 {
+  font-family: "sfMedium";
+}
+.primary {
+  background-color: var(--primary);
+  border: none;
+}
+
+.primary:hover {
+  background-color: var(--primaryDarker);
+}
+
+.link-primary,
+.link-primary:link,
+.link-primary:visited {
+  color: var(--primary);
+}
+
+.link-primary:hover {
+  color: var(--primary);
+  background-color: var(--primaryOpacity);
+}
+
+.table-button {
+  cursor: pointer;
+  color: var(--primary);
+  background: none;
+  border: none;
+}
+
+#btn-export-excel {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  transition: background-color 0.13s ease-in;
+}
+
+#btn-export-excel:hover {
+  background-color: #005d00;
+}
+
+.next-simplified {
+  display: none;
+}
+.prev-simplified {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content-table tbody,
+  .content-table tr,
+  .content-table td {
+    display: block;
+  }
+  .content-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .content-table td {
+    position: relative;
+    padding-left: 30%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+  }
+  .content-table td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  .content-table tr {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .next,
+  .prev {
+    display: none;
+  }
+
+  .next-simplified {
+    display: block;
+  }
+  .prev-simplified {
+    display: block;
+  }
+
+  li {
+    font-size: 0.8em;
+  }
+}
