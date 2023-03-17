@@ -78,7 +78,7 @@ header nav {
 }
 /* SECTION MISSION */
 #section-mission {
-  background: URL("../assets/img/fondo-mision.jpg");
+  background: URL("../assets/img/fondo-mision.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ header nav {
 /* SECTION OBJECTIVES */
 #section-objectives {
   background-color: red;
-  background: url("../assets/img/fondo-objetivos.jpg");
+  background: url("../assets/img/fondo-objetivos.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,26 +239,26 @@ header nav {
 }
 
 .plan-1 .plan-image-container {
-  background: url("../assets/img/plan-1.jpg");
+  background: url("../assets/img/plan-1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .plan-2 .plan-image-container {
-  background: url("../assets/img/plan-2.jpg");
+  background: url("../assets/img/plan-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .plan-3 .plan-image-container {
-  background: url("../assets/img/plan-3.jpg");
+  background: url("../assets/img/plan-3.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .plan-4 .plan-image-container {
-  background: url("../assets/img/plan-4.jpg");
+  background: url("../assets/img/plan-4.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
