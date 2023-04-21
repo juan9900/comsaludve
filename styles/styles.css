@@ -43,6 +43,12 @@
 html {
   box-sizing: border-box;
 }
+
+h1 {
+  font-family: "sfHeavy";
+  color: #0198be;
+  font-size: 4rem;
+}
 *,
 *:before,
 *:after {
@@ -584,6 +590,11 @@ footer iframe {
   background: var(--offWhite);
   color: var(--grayText);
 }
+
+.footer-mdn a {
+  color: var(--grayText);
+  text-decoration: underline;
+}
 @media screen and (min-width: 1024px) {
   .mission-container {
     max-width: 50%;
@@ -609,7 +620,7 @@ footer iframe {
     justify-content: center;
   }
   .social img {
-    width: 50%;
+    width: 60%;
   }
 
   .form-register,
@@ -644,7 +655,7 @@ footer iframe {
   }
 
   .mission-container h1 {
-    font-size: 3.5em;
+    font-size: 5em;
   }
 
   .mission-container p {
@@ -830,6 +841,9 @@ footer iframe {
 }
 
 @media screen and (max-width: 780px) {
+  .mission-container h1 {
+    font-size: 2.5em;
+  }
   .text-secondary.scroll-text {
     font-size: 1em;
   }

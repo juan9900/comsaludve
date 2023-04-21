@@ -1,9 +1,16 @@
 
 <?php
-$host = "127.0.0.1";
-$username = "root";
-$password = '';
-$database = "comsalud";
+// $host = "127.0.0.1";
+// $username = "root";
+// $password = '';
+// $database = "comsalud";
+
+$host = "localhost";
+$username = "comsaludve_admin";
+$password = "comsaluddbadmin";
+$database = "comsaludve_db";
+
+
 $db = mysqli_connect($host, $username, $password, $database);
 
 if (!$db) {

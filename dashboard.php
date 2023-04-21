@@ -12,7 +12,7 @@ $error_id = isset($_GET['err']) ? (int)$_GET['err'] : 0;
 ?>
 <main class="container mt-4">
     <div class="row justify-content-center">
-        <h2 class="text-center mb-4">CLUB FORNO</h2>
+        <h2 class="text-center mb-4">COMSALUD</h2>
 
 
         <form class="col-10 col-lg-4 col-md-6" action="modules/authenticate.php" method="POST">
