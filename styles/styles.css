@@ -44,11 +44,6 @@ html {
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "sfHeavy";
-  color: #0198be;
-  font-size: 4rem;
-}
 *,
 *:before,
 *:after {
@@ -56,6 +51,14 @@ h1 {
 }
 body {
   font-family: "sfLight";
+}
+
+header {
+  height: 100vh;
+  background: url("/assets/img/fondocomsalud.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -82,13 +85,87 @@ header nav {
 .nav-item {
   font-size: 1.3rem;
 }
+
+.header-background,
+header div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "sfHeavy";
+  color: var(--offWhite);
+  font-size: 7rem;
+  margin-bottom: 0;
+  line-height: 5rem;
+}
+
+.heading-container {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  right: 7%;
+  width: fit-content;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.heading-container .animate__animated {
+  opacity: 1;
+}
+
+.heading-subtitle {
+  color: var(--offWhite);
+  width: 95%;
+  margin: 0 auto;
+  font-size: 2.3em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
 /* SECTION MISSION */
 #section-mission {
   background: URL("../assets/img/fondo-mision.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 15rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
+}
+/* .splide {
+  background: rgb(10, 172, 208);
+  background: url("../assets/img/background-logo.png"),
+    linear-gradient(90deg, rgba(10, 172, 208, 1) 0%, rgb(55, 117, 193) 100%);
+  background-size: cover cover;
+  background-repeat: no-repeat repeat;
+} */
+
+#splide01-track {
+  padding: 0;
+  margin: 5rem auto 0 auto;
+  width: 100%;
+  height: 70vh;
+  background: rgb(10, 172, 208);
+  background: url("../assets/img/background-logo.png"),
+    linear-gradient(90deg, rgba(10, 172, 208, 1) 0%, rgba(38, 92, 158, 1) 100%);
+  background-size: cover cover;
+  background-repeat: no-repeat repeat;
+}
+
+.splide__slide img {
+  object-fit: contain;
+  object-position: top;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.splide__slide {
+  filter: blur(3px);
+}
+
+.splide__slide.is-active {
+  filter: none;
 }
 
 .mission-container {
@@ -101,7 +178,7 @@ header nav {
 }
 
 .mission-container p {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .mision-flecha {
@@ -637,9 +714,28 @@ footer iframe {
   .socials {
     width: 5%;
   }
+
+  h1 {
+    font-size: 6em;
+  }
+
+  .heading-subtitle {
+    font-size: 1.8em;
+  }
 }
 
 @media screen and (min-width: 2000px) {
+  .heading-container {
+    top: 30%;
+  }
+  h1 {
+    font-size: 10em;
+  }
+
+  .heading-subtitle {
+    font-size: 2.8em;
+    margin-top: 1rem;
+  }
   h2 {
     font-size: 3em;
   }
@@ -682,6 +778,17 @@ footer iframe {
 }
 
 @media screen and (min-width: 3000px) {
+  .heading-container {
+    top: 30%;
+  }
+  h1 {
+    font-size: 14em;
+  }
+
+  .heading-subtitle {
+    margin: 2rem auto;
+    font-size: 4.5em;
+  }
   .mision-flecha {
     height: 50%;
   }
@@ -731,6 +838,22 @@ footer iframe {
 }
 
 @media screen and (max-width: 1024px) {
+  .heading-container {
+    width: 100%;
+    text-align: center;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  .heading-subtitle {
+    font-size: 1.8;
+    width: 75%;
+    margin: 0 auto;
+  }
   /* NAVBAR */
   .navbar-brand {
     width: 50%;
@@ -841,6 +964,18 @@ footer iframe {
 }
 
 @media screen and (max-width: 780px) {
+  header {
+    background-position: right;
+  }
+  h1 {
+    font-size: 4em;
+  }
+
+  .heading-subtitle {
+    font-size: 1.1em;
+    width: 40%;
+    margin: -1rem auto;
+  }
   .mission-container h1 {
     font-size: 2.5em;
   }
@@ -945,6 +1080,14 @@ footer iframe {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    background-position: right;
+  }
+  .heading-subtitle {
+    font-size: 1.1em;
+    width: 80%;
+    margin: -1rem auto;
+  }
   .mission-container p {
     font-size: 1.3em;
   }
@@ -972,6 +1115,15 @@ footer iframe {
   }
 }
 @media screen and (max-width: 320px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .heading-subtitle {
+    font-size: 1em;
+    width: 7 0%;
+    margin: -1rem auto;
+  }
   .mission-container p {
     font-size: 1em;
   }

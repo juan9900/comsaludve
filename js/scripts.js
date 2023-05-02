@@ -1,4 +1,10 @@
+const mountSplides = () => {
+  var splide = new Splide(".splide");
+  splide.mount();
+};
+
 $(document).ready(function () {
+  mountSplides();
   const currentYear = new Date().getFullYear();
   $("#footer-year").text(currentYear);
 
