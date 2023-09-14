@@ -855,6 +855,13 @@ footer iframe {
 }
 
 @media screen and (max-width: 1024px) {
+  header {
+    height: 40vh;
+    background-position: 100% 0;
+    background-size: inherit;
+    background-position: 100% 50%;
+    overflow: hidden;
+  }
   .heading-container {
     width: 100%;
     text-align: center;
