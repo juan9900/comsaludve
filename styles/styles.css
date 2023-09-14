@@ -72,6 +72,7 @@ header nav {
   box-shadow: 0px 1px 15px #c6c6c6;
   position: relative;
   z-index: 1;
+  max-width: 100%;
 }
 
 .navbar-brand {
@@ -99,6 +100,7 @@ h1 {
   font-size: 7rem;
   margin-bottom: 0;
   line-height: 5rem;
+  opacity: 0;
 }
 
 .heading-container {
@@ -116,6 +118,7 @@ h1 {
 }
 
 .heading-subtitle {
+  opacity: 0;
   color: var(--offWhite);
   width: 95%;
   margin: 0 auto;
@@ -346,6 +349,12 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
+.plan-5 .plan-image-container {
+  background: url("../assets/img/plan-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .plan h3 {
   position: absolute;
   bottom: 6%;
@@ -381,7 +390,7 @@ h1 {
 .plan-price {
   color: var(--secondary);
   font-family: "sfHeavy";
-  font-size: 3.2em;
+  font-size: 2.7em;
   margin-bottom: 0;
 }
 
@@ -721,6 +730,14 @@ footer iframe {
 
   .heading-subtitle {
     font-size: 1.8em;
+  }
+
+  .plans-container {
+    width: 85%;
+  }
+
+  .plan-price {
+    font-size: 2em;
   }
 }
 

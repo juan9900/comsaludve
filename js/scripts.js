@@ -1,10 +1,4 @@
-const mountSplides = () => {
-  var splide = new Splide(".splide");
-  splide.mount();
-};
-
 $(document).ready(function () {
-  mountSplides();
   const currentYear = new Date().getFullYear();
   $("#footer-year").text(currentYear);
 
@@ -43,6 +37,9 @@ $(document).ready(function () {
   });
   $("#plan-4").on("click", function () {
     $("#modal-plan-4").modal("show");
+  });
+  $("#plan-5").on("click", function () {
+    $("#modal-plan-5").modal("show");
   });
 
   function checkName(e) {
@@ -103,7 +100,7 @@ $("#quotation-form").on("submit", (e) => {
 
   $.ajax({
     type: "POST",
-    url: "./modules/addQuotation.php",
+    url: "https://hook.eu1.make.com/72rgi7pqorobhi0e1u5xe8lx8jfj271p",
     data: {
       firstName,
       lastName,
@@ -112,7 +109,7 @@ $("#quotation-form").on("submit", (e) => {
     },
     dataType: "json",
     success: (response) => {
-      if (response.status === "success") {
+      if (response.ok === true) {
         $(".register-form-container").addClass("d-none");
         $(".user-registered-container").removeClass("d-none");
       } else {

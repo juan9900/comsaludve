@@ -20,7 +20,7 @@
   <title>Comsalud</title>
 </head>
 
-<body>
+<body class="relative">
   <header>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top bg-light">
@@ -66,7 +66,40 @@
     </div>
   </header>
   <main class="">
+    <section id="section-register" class="d-flex flex-column align-items-center justify-content-between">
+      <div class="user-registered-container pt-5 pb-5 d-none">
+        <h2>¡Te has registrado con éxito!</h2>
+      </div>
+      <div class="register-form-container w-100 text-center m-auto">
+        <h2 class="mb-3">Registrate Aquí</h2>
+        <div class="col-11 col-lg-8  m-auto " id="liveAlertPlaceholder"></div>
 
+        <form id="quotation-form" class="form-register d-flex flex-column align-items-center justify-content-between m-auto">
+          <div class="mb-2 w-100 d-flex flex-column">
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="John" name="firstName" id="firstName">
+          </div>
+          <div class="mb-2 w-100 d-flex flex-column">
+            <label for="lastName">Apellido</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe">
+          </div>
+
+          <div class="mb-2 w-100 d-flex flex-column">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+          </div>
+          <div class="mb-3 w-100 d-flex flex-column">
+            <label for="email">Teléfono</label>
+            <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">+58</span>
+              <input type="text" class="form-control" placeholder="04241234567" name="phoneNumber" id="phoneNumber">
+            </div>
+          </div>
+          <input class="btn-register" type="submit" value="Registrar">
+        </form>
+      </div>
+
+    </section>
     <section id="section-mission" class="position-relative d-flex flex-column justify-content-center">
       <div class="mission-container">
         <h2 class="text-center">Nosotros</h2>
@@ -194,40 +227,7 @@
     </section>
 
 
-    <section id="section-register" class="d-flex flex-column align-items-center justify-content-between">
-      <div class="user-registered-container pt-5 pb-5 d-none">
-        <h2>¡Te has registrado con éxito!</h2>
-      </div>
-      <div class="register-form-container w-100 text-center m-auto">
-        <h2 class="mb-3">Registrate Aquí</h2>
-        <div class="col-11 col-lg-8  m-auto " id="liveAlertPlaceholder"></div>
 
-        <form id="quotation-form" class="form-register d-flex flex-column align-items-center justify-content-between m-auto">
-          <div class="mb-2 w-100 d-flex flex-column">
-            <label for="name">Nombre</label>
-            <input type="text" placeholder="John" name="firstName" id="firstName">
-          </div>
-          <div class="mb-2 w-100 d-flex flex-column">
-            <label for="lastName">Apellido</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Doe">
-          </div>
-
-          <div class="mb-2 w-100 d-flex flex-column">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
-          </div>
-          <div class="mb-3 w-100 d-flex flex-column">
-            <label for="email">Teléfono</label>
-            <div class="input-group flex-nowrap">
-              <span class="input-group-text" id="addon-wrapping">+58</span>
-              <input type="text" class="form-control" placeholder="04241234567" name="phoneNumber" id="phoneNumber">
-            </div>
-          </div>
-          <input class="btn-register" type="submit" value="Registrar">
-        </form>
-      </div>
-
-    </section>
 
   </main>
 
