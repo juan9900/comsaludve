@@ -98,20 +98,40 @@ $("#quotation-form").on("submit", (e) => {
   phoneNumber = $("#phoneNumber").val();
   e.preventDefault();
 
+  if (
+    firstName === "" ||
+    lastName === "" ||
+    email === "" ||
+    phoneNumber === ""
+  ) {
+    alert(["Todos los campos son obligatorios"], "danger");
+    timer = setTimeout(() => {
+      $("#liveAlertPlaceholder").fadeOut(500, function () {
+        $(this).empty().show();
+      });
+    }, 4000);
+    return;
+  }
+
   $.ajax({
     type: "POST",
     url: "https://hook.eu1.make.com/72rgi7pqorobhi0e1u5xe8lx8jfj271p",
     data: {
-      firstName,
-      lastName,
-      email,
-      phoneNumber,
+      userData: {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+      },
     },
     dataType: "json",
     success: (response) => {
       if (response.ok === true) {
         $(".register-form-container").addClass("d-none");
         $(".user-registered-container").removeClass("d-none");
+        fbq("track", "CompleteRegistration");
+        console.log("registered");
+        return;
       } else {
         alert(response.errors, "danger");
         timer = setTimeout(() => {

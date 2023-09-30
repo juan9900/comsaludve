@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MVFVQNZ16"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5MVFVQNZ16');
+  </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Comsalud es una empresa afiliada al Complejo Médico San Lucas, ubicados en Maracaibo, Venezuela. Creada para marcar la diferencia en planes de salud. Distinguida y competitiva en la actualidad de cuidados médicos, ajustando su crecimiento a las exigencias mundiales y formando parte del concepto de globalización de la salud.">
+  <meta name="description" content="Comsalud es una empresa afiliada al Complejo Médico San Lucas, ubicados en Maracaibo, Venezuela. Creada para marcar la diferencia en planes de salud.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -15,8 +29,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="canonical" href="http://www.comsaludve.com/">
+  <link rel="canonical" href="http://www.comsaludve.com">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <title>Comsalud</title>
   <!-- Meta Pixel Code -->
   <script>
     ! function(f, b, e, v, n, t, s) {
@@ -37,12 +53,11 @@
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1447378272778571');
+    fbq('init', '703042151187704');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1447378272778571&ev=PageView&noscript=1" /></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=703042151187704&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
-  <title>Comsalud</title>
 </head>
 
 <body class="relative">
@@ -96,7 +111,8 @@
         <h2>¡Te has registrado con éxito!</h2>
       </div>
       <div class="register-form-container w-100 text-center m-auto">
-        <h2 class="mb-3">¿Quieres afiliarte?</h2>
+        <h2 class="mb-1">¿Quieres afiliarte?</h2>
+        <p class="mt-0 text-white">Déjanos tus datos</p>
         <div class="col-11 col-lg-8  m-auto " id="liveAlertPlaceholder"></div>
 
         <form id="quotation-form" class="form-register d-flex flex-column align-items-center justify-content-between m-auto">
@@ -120,7 +136,7 @@
               <input type="text" class="form-control" placeholder="04241234567" name="phoneNumber" id="phoneNumber">
             </div>
           </div>
-          <input class="btn-register" type="submit" value="Quiero ">
+          <input class="btn-register" type="submit" value="Enviar">
         </form>
       </div>
 
