@@ -41,6 +41,9 @@ $(document).ready(function () {
   $("#plan-5").on("click", function () {
     $("#modal-plan-5").modal("show");
   });
+  $("#plan-6").on("click", function () {
+    $("#modal-plan-6").modal("show");
+  });
 
   function checkName(e) {
     var c = this.selectionStart,
@@ -86,7 +89,13 @@ $(document).ready(function () {
 
   $("#email").on("input", checkEmail);
 });
-
+//Eventos personalizados del pixel de meta para el boton de mas informacion de cada plan
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.getAttribute("data-event")) {
+    var eventName = e.target.getAttribute("data-event");
+    fbq("trackCustom", eventName);
+  }
+});
 const alertPlaceholder = $("#liveAlertPlaceholder");
 var timerCloseAlert;
 // Enviar suscripcion a cotizacion
@@ -133,7 +142,8 @@ $("#quotation-form").on("submit", (e) => {
         console.log("registered");
         return;
       } else {
-        alert(response.errors, "danger");
+        console.log(response.errors);
+        alert(response.errors.toString(), "danger");
         timer = setTimeout(() => {
           $("#liveAlertPlaceholder").fadeOut(500, function () {
             $(this).empty().show();
@@ -161,7 +171,7 @@ const alert = (message, type) => {
   const wrapper = document.createElement("div");
   wrapper.innerHTML = [
     `<div class="alert alert-${type}  mb-2" role="alert" id="alert">`,
-    `   <div class="m-auto w-100">${message.join("<p></p>")}</div>`,
+    `   <div class="m-auto w-100">${message}</div>`,
 
     "</div>",
   ].join("");

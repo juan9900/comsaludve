@@ -35,21 +35,14 @@
   <title>Comsalud</title>
   <!-- Meta Pixel Code -->
   <script>
-    ! function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
       'https://connect.facebook.net/en_US/fbevents.js');
@@ -136,7 +129,7 @@
               <input type="text" class="form-control" placeholder="04241234567" name="phoneNumber" id="phoneNumber">
             </div>
           </div>
-          <input class="btn-register" type="submit" value="Enviar">
+          <input class="btn-register" type="submit" value="Afiliarme ">
         </form>
       </div>
 
@@ -189,12 +182,12 @@
           <div class="plan-image-container position-relative">
             <!-- <img src="/assets/img/plan-1.jpg" alt="plan image"> -->
             <div class="overlay-primary"></div>
-            <h3>Plan <br> esencial</h3>
+            <h3>PLAN <br> PROTECCIÓN BÁSICO</h3>
           </div>
           <p class="text-secondary mb-0">Cobertura</p>
 
           <p class="plan-price">
-            $2.000
+            $5.000
           </p>
           <!-- <p class="monthly-price">
             COSTO<br>MENSUAL $10
@@ -204,12 +197,12 @@
           <div class="plan-image-container position-relative">
             <!-- <img src="./assets/img/plan-2.webp" alt="plan image"> -->
             <div class="overlay-secondary"></div>
-            <h3>Plan <br> Salud Total</h3>
+            <h3>PLAN <br> PROTECCIÓN PLUS</h3>
           </div>
           <p class="text-secondary mb-0">Cobertura</p>
 
           <p class="plan-price">
-            $25.000
+            $15.000
           </p>
           <!-- <p class="monthly-price">
             COSTO<br>MENSUAL $35
@@ -219,12 +212,12 @@
           <div class="plan-image-container position-relative">
             <!-- <img class="plan-img" src="./assets/img/plan-3.jpg" alt="plan image"> -->
             <div class="overlay-primary"></div>
-            <h3>Plan <br> Salud Ya</h3>
+            <h3>PLAN <br> PROTECCIÓN GLOBAL</h3>
           </div>
           <p class="text-secondary mb-0">Cobertura</p>
 
           <p class="plan-price">
-            $15.000
+            $30.000
           </p>
           <!-- <p class="monthly-price">
             COSTO<br>MENSUAL $25
@@ -234,15 +227,30 @@
           <div class="plan-image-container position-relative">
             <!-- <img src="/assets/img/plan-4.jpg" alt="plan image"> -->
             <div class="overlay-secondary"></div>
-            <h3>Plan <br> Salud Senior</h3>
+            <h3>PLAN <br> PROTECCIÓN FAMILIAR</h3>
           </div>
           <p class="text-secondary mb-0">Cobertura</p>
           <p class="plan-price">
-            $15.000
+            $75.000
           </p>
           <!-- <p class="monthly-price">
             COSTO<br>MENSUAL $75
           </p> -->
+        </div>
+        <div id="plan-6" class="plan plan-6 d-flex flex-column align-items-center justify-content-between">
+          <div class="plan-image-container position-relative">
+            <!-- <img src="/assets/img/plan-4.jpg" alt="plan image"> -->
+            <div class="overlay-primary"></div>
+
+            <h3>PLAN <br> PROTECCIÓN DORADO</h3>
+          </div>
+          <p class="text-secondary mb-0">Cobertura</p>
+          <p class="plan-price">
+            $50.000
+          </p>
+          <!-- <p class="monthly-price">
+                    COSTO<br>MENSUAL $75
+                  </p> -->
         </div>
         <div id="plan-5" class="plan plan-5 d-flex flex-column align-items-center justify-content-between">
           <div class="plan-image-container position-relative">
@@ -293,8 +301,8 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="text-center w-100 d-flex flex-column align-items-center">
-            <h5 class="modal-title" id="exampleModalLabel">PLAN ESENCIAL</h5>
-            <P class="modal-price">$2.000</P>
+            <h5 class="modal-title" id="exampleModalLabel">PLAN PROTECCIÓN BÁSICO</h5>
+            <P class="modal-price">$5.000</P>
             <p class="text-secondary w-100 text-center">
               Desliza para ver todos nuestros servicios
             </p>
@@ -306,84 +314,364 @@
           <ul class="modal-list">
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Cobertura única agotable<br>
-                  Edad de admisibilidad 0 - 64 años</p>
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>Consultas básicas ilimitadas</p>
+              
+                <p class="plan-period">Sin p/e</p>
+              </div>
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>Consultas especializadas</p>
+              
+                <p class="plan-period">3 meses p/e</p>
               </div>
 
             </li>
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Consultas básicas ilimitadas (APS)<br>
-                  Cobertura inmediata 100%</p>
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>Servicio de emergencia</p>
+              
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Consultas especializadas<br>
-                  Plazos de espera 3 meses</p>
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>RX de emergencia</p>
+              
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Rayos X. Estudios simples<br>
-                  Cobertura inmediata 100%</p>
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>Laboratorios básicos</p>
+              
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Exámenes de lab. simples<br>
-                  Cobertura inmediata 100%</p>
+              <div class="d-flex flex-row justify-content-between w-100 position-relative">
+                <p>Ecograma básico</p>
+              
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Ecogramas básicos<br>
-                  Cobertura inmediata 100%</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="w-100">
-                <p>Emergencias ambulatorias<br>
-                  Cobertura inmediata 100%</p>
-              </div>
-
-            </li>
+            
           </ul>
 
         </div>
         <p class="text-secondary modal-monthly w-100 text-center pt-2">
-          Costo mensual: $10
+          Costo mensual: $6
         </p>
         <div class="modal-footer ">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <div class="modal-link-container">
-            <a href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Esencial." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
+            <a data-event="Click plan Esencial" href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20protección%20básico." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
           </div>
 
         </div>
       </div>
     </div>
   </div>
+<div class="modal modal-plan fade" id="modal-plan-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="text-center w-100 d-flex flex-column align-items-center">
+          <h5 class="modal-title" id="exampleModalLabel">PLAN PROTECCIÓN PLUS</h5>
+          <P class="modal-price">$15.000</P>
 
+          <p class="text-secondary w-100 text-center">
+            Desliza para ver todos nuestros servicios
+          </p>
+        </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+
+        <ul class="modal-list list-dotted">
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Hospitalización</p>
+
+              <p class="plan-period">6 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Unidad de cuidados intensivos</p>
+
+              <p class="plan-period">10 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Cirugías electivas</p>
+
+              <p class="plan-period">12 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Maternidad</p>
+
+              <p class="plan-period">12 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Cirugías de emergencia</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Consultas básicas ilimitadas</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Consultas especializadas</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Servicios de emergencias</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Servicio de odontología</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Rayos X de emergencia</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Rayos X especializados</p>
+
+              <p class="plan-period">4 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Mamografías</p>
+
+              <p class="plan-period">4 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Tomografías</p>
+
+              <p class="plan-period">6 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Laboratorios de emergencia</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Laboratorios básicos</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Laboratorios especializados</p>
+
+              <p class="plan-period">4 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Ecograma básico</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Ecograma especializado</p>
+
+              <p class="plan-period">4 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Electrocardiograma</p>
+
+              <p class="plan-period">Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Ecocardiograma / Mapa / Holter</p>
+
+              <p class="plan-period">6 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Gastrocopia</p>
+
+              <p class="plan-period">10 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Colonoscopia</p>
+
+              <p class="plan-period">10 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Banco de sangre</p>
+
+              <p class="plan-period">24 horas Sin p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between align-items-end w-100 position-relative">
+              <p>Oncología <br>(radioterapias / quimioterapias)</p>
+
+              <p class="plan-period">12 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Patologías agudas</p>
+
+              <p class="plan-period">6 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Servicios funerarios</p>
+
+              <p class="plan-period">3 meses p/e</p>
+            </div>
+
+          </li>
+          <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+            <img src="./assets/img/APROBADO-LOGO.png" alt="">
+            <div class="d-flex flex-row justify-content-between w-100 position-relative">
+              <p>Traslado en ambulancia</p>
+
+              <p class="plan-period">Post QX</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </div>
+      <p class="text-secondary modal-monthly w-100 text-center pt-2">
+        Costo mensual: $12
+      </p>
+      <div class="modal-footer ">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <div class="modal-link-container">
+          <a data-event="Click plan Salud Total"
+            href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20protección%20plus."
+            target="_blank" type="button"
+            class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más
+            información <img src="./assets/img/open-window.svg" alt="open window"></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
   <div class="modal modal-plan fade" id="modal-plan-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <div class="text-center w-100 d-flex flex-column align-items-center">
-            <h5 class="modal-title" id="exampleModalLabel">PLAN SALUD YA</h5>
-            <P class="modal-price">$15.000</P>
+            <h5 class="modal-title" id="exampleModalLabel">PLAN PROTECCIÓN GLOBAL</h5>
+            <P class="modal-price">$30.000</P>
             <p class="modal-rules">Cobertura única agotable<br>
               Edad de admisibilidad: 0 a 64 años</p>
             <p class="text-secondary w-100 text-center">
@@ -428,7 +716,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
                 <p>Maternidad</p>
 
-                <p class="plan-period">10 meses p/e</p>
+                <p class="plan-period">12 meses p/e</p>
               </div>
 
             </li>
@@ -480,7 +768,7 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Rayos X de emergencia</p>
+                <p>RX de emergencia</p>
 
                 <p class="plan-period">Sin p/e</p>
               </div>
@@ -489,9 +777,9 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Rayos X especializados</p>
+                <p>RX especializados</p>
 
-                <p class="plan-period">4 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -500,7 +788,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
                 <p>Mamografías</p>
 
-                <p class="plan-period">4 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -554,7 +842,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
                 <p>Ecograma especializado</p>
 
-                <p class="plan-period">4 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -572,7 +860,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
                 <p>Ecocardiograma / Mapa / Holter</p>
 
-                <p class="plan-period">10 meses p/e</p>
+                <p class="plan-period">6 meses p/e</p>
               </div>
 
             </li>
@@ -597,9 +885,9 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Banco de sangre</p>
+                <p>Banco de sangre 24 horas</p>
 
-                <p class="plan-period">14 horas Sin p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -634,342 +922,38 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Traslados de ambulancia</p>
+                <p>Traslado en ambulancia</p>
 
-                <p class="plan-period">Sin p/e</p>
+                <p class="plan-period">Post QX</p>
               </div>
 
             </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Delivery de medicamentos</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
+            
           </ul>
 
         </div>
         <p class="text-secondary modal-monthly w-100 text-center pt-2">
-          Costo mensual: $25
+          Costo mensual: $20
         </p>
         <div class="modal-footer ">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <div class="modal-link-container">
-            <a href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Salud%20Ya." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
+            <a data-event="Click plan Salud Ya" href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20protección%20global." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
           </div>
 
         </div>
       </div>
     </div>
   </div>
-  <div class="modal modal-plan fade" id="modal-plan-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="text-center w-100 d-flex flex-column align-items-center">
-            <h5 class="modal-title" id="exampleModalLabel">PLAN SALUD TOTAL</h5>
-            <P class="modal-price">$25.000</P>
-            <p class="modal-rules">Cobertura única agotable<br>
-              Edad de admisibilidad: 0 a 64 años</p>
-            <p class="text-secondary w-100 text-center">
-              Desliza para ver todos nuestros servicios
-            </p>
-          </div>
-
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body ">
-
-          <ul class="modal-list list-dotted">
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Hospitalización</p>
-
-                <p class="plan-period">6 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Unidad de cuidados intensivos</p>
-
-                <p class="plan-period">10 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Cirugías electivas</p>
-
-                <p class="plan-period">12 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Maternidad</p>
-
-                <p class="plan-period">10 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Cirugías de emergencia</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Consultas básicas ilimitadas</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Consultas especializadas</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Servicios de emergencias</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Servicio de odontología</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Rayos X de emergencia</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Rayos X especializados</p>
-
-                <p class="plan-period">4 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Mamografías</p>
-
-                <p class="plan-period">4 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Tomografías</p>
-
-                <p class="plan-period">6 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Laboratorios de emergencia</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Laboratorios básicos</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Laboratorios especializados</p>
-
-                <p class="plan-period">4 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Ecograma básico</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Ecograma especializado</p>
-
-                <p class="plan-period">4 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Electrocardiograma</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Ecocardiograma / Mapa / Holter</p>
-
-                <p class="plan-period">10 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Gastrocopia</p>
-
-                <p class="plan-period">10 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Colonoscopia</p>
-
-                <p class="plan-period">10 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Banco de sangre</p>
-
-                <p class="plan-period">14 horas Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between align-items-end w-100 position-relative">
-                <p>Oncología <br>(radioterapias / quimioterapias)</p>
-
-                <p class="plan-period">12 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Patologías agudas</p>
-
-                <p class="plan-period">6 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Servicios funerarios</p>
-
-                <p class="plan-period">3 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Traslados funerarios</p>
-
-                <p class="plan-period">3 meses p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Traslados de ambulancia</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative">
-                <p>Delivery de medicamentos</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
-          </ul>
-
-        </div>
-        <p class="text-secondary modal-monthly w-100 text-center pt-2">
-          Costo mensual: $35
-        </p>
-        <div class="modal-footer ">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <div class="modal-link-container">
-            <a href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Salud%20Total." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <div class="modal modal-plan fade" id="modal-plan-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <div class="text-center w-100 d-flex flex-column align-items-center">
-            <h5 class="modal-title" id="exampleModalLabel">PLAN TOTAL SENIOR</h5>
-            <P class="modal-price">$15.000</P>
-            <p class="modal-rules">Cobertura única agotable<br>
-              Edad de admisibilidad: 65 a 80 años</p>
+            <h5 class="modal-title" id="exampleModalLabel">PLAN PROTECCIÓN FAMILIAR</h5>
+            <P class="modal-price">$75.000</P>
+            <p class="text-secondary">Desde 1 hasta 4 afiliados</p>
             <p class="text-secondary w-100 text-center scroll-text">
               Desliza para ver todos nuestros servicios
             </p>
@@ -994,7 +978,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Unidad de cuidados intensivos</p>
 
-                <p>10 meses p/e</p>
+                <p>6 meses p/e</p>
               </div>
 
             </li>
@@ -1064,7 +1048,7 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
-                <p>Rayos X de emergencia</p>
+                <p>RX de emergencia</p>
 
                 <p>Sin p/e</p>
               </div>
@@ -1073,9 +1057,9 @@
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
-                <p>Rayos X especializados</p>
+                <p>RX especializados</p>
 
-                <p>4 meses p/e</p>
+                <p>Sin p/e</p>
               </div>
 
             </li>
@@ -1084,7 +1068,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Mamografías</p>
 
-                <p class="plan-period">4 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -1093,7 +1077,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Tomografías</p>
 
-                <p class="plan-period">6 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -1120,7 +1104,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Laboratorios especializados</p>
 
-                <p>4 meses p/e</p>
+                <p>Sin p/e</p>
               </div>
 
             </li>
@@ -1138,7 +1122,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Ecograma especializado</p>
 
-                <p class="plan-period">4 meses p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -1156,7 +1140,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Ecocardiograma / Mapa / Holter</p>
 
-                <p class="plan-period">10 meses p/e</p>
+                <p class="plan-period">3 meses p/e</p>
               </div>
 
             </li>
@@ -1165,7 +1149,7 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Gastrocopia</p>
 
-                <p class="plan-period">10 meses p/e</p>
+                <p class="plan-period">6 meses p/e</p>
               </div>
 
             </li>
@@ -1174,16 +1158,16 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Colonoscopia</p>
 
-                <p class="plan-period">10 meses p/e</p>
+                <p class="plan-period">6 meses p/e</p>
               </div>
 
             </li>
             <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
               <img src="./assets/img/APROBADO-LOGO.png" alt="">
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
-                <p>Banco de sangre</p>
+                <p>Banco de sangre 24 horas</p>
 
-                <p class="plan-period">14 horas Sin p/e</p>
+                <p class="plan-period">Sin p/e</p>
               </div>
 
             </li>
@@ -1220,29 +1204,21 @@
               <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
                 <p>Traslados de ambulancia</p>
 
-                <p class="plan-period">Sin p/e</p>
+                <p class="plan-period">Post QX</p>
               </div>
 
             </li>
-            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
-              <img src="./assets/img/APROBADO-LOGO.png" alt="">
-              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
-                <p>Delivery de medicamentos</p>
-
-                <p class="plan-period">Sin p/e</p>
-              </div>
-
-            </li>
+            
           </ul>
 
         </div>
         <p class="text-secondary modal-monthly w-100 text-center pt-2">
-          Costo mensual: $75
+          Costo mensual: $60
         </p>
         <div class="modal-footer ">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <div class="modal-link-container">
-            <a href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Total%20Senior." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
+            <a data-event="Click plan Total Senior" href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20protección%20familiar." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
           </div>
 
         </div>
@@ -1309,7 +1285,7 @@
         <div class="modal-footer ">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <div class="modal-link-container">
-            <a href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Escolar." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
+            <a data-event="Click plan Escolar" href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20Escolar." target="_blank" type="button" class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más información <img src="./assets/img/open-window.svg" alt="open window"></a>
           </div>
 
         </div>
@@ -1317,6 +1293,283 @@
     </div>
   </div>
 
+  <div class="modal modal-plan fade" id="modal-plan-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="text-center w-100 d-flex flex-column align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">PLAN PROTECCIÓN DORADO</h5>
+            <P class="modal-price">$50.000</P>
+            <p class="text-secondary">Desde 1 a 2 afiliados</p>
+            <p class="text-secondary w-100 text-center scroll-text">
+              Desliza para ver todos nuestros servicios
+            </p>
+          </div>
+  
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+  
+          <ul class="modal-list list-dotted">
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Hospitalización</p>
+  
+                <p>6 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Unidad de cuidados intensivos</p>
+  
+                <p>6 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Cirugías electivas</p>
+  
+                <p>12 meses p/e</p>
+              </div>
+  
+            </li>
+           
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Cirugías de emergencia</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Consultas básicas ilimitadas</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Consultas especializadas</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Servicios de emergencias</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Servicio de odontología</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>RX de emergencia</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>RX especializados</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Mamografías</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Tomografías</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Laboratorios de emergencia</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Laboratorios básicos</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Laboratorios especializados</p>
+  
+                <p>Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Ecograma básico</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Ecograma especializado</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Electrocardiograma</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Ecocardiograma / Mapa / Holter</p>
+  
+                <p class="plan-period">3 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Gastrocopia</p>
+  
+                <p class="plan-period">6 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Colonoscopia</p>
+  
+                <p class="plan-period">6 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Banco de sangre 24 horas</p>
+  
+                <p class="plan-period">Sin p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div
+                class="d-flex flex-row justify-content-between align-items-end w-100 position-relative align-items-center">
+                <p>Oncología <br>(radioterapias / quimioterapias)</p>
+  
+                <p class="plan-period">12 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Patologías agudas</p>
+  
+                <p class="plan-period">6 meses p/e</p>
+              </div>
+  
+            </li>
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Servicios funerarios</p>
+  
+                <p class="plan-period">3 meses p/e</p>
+              </div>
+  
+            </li>
+  
+            <li class=" modal-list-item d-flex flex-row justify-content-start align-items-center">
+              <img src="./assets/img/APROBADO-LOGO.png" alt="">
+              <div class="d-flex flex-row justify-content-between w-100 position-relative align-items-center">
+                <p>Traslados de ambulancia</p>
+  
+                <p class="plan-period">Post QX</p>
+              </div>
+  
+            </li>
+  
+          </ul>
+  
+        </div>
+        <p class="text-secondary modal-monthly w-100 text-center pt-2">
+          Costo mensual: $50
+        </p>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <div class="modal-link-container">
+            <a data-event="Click plan Total Senior"
+              href="https://api.whatsapp.com/send?phone=584246098372&text=Buenas%2C%20quisiera%20saber%20m%C3%A1s%20informaci%C3%B3n%20del%20plan%20protección%20dorado."
+              target="_blank" type="button"
+              class="btn btn-primary d-flex flex-row justify-content-center align-items-center modal-link">Obtener más
+              información <img src="./assets/img/open-window.svg" alt="open window"></a>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <footer id="section-contact">
