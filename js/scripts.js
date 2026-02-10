@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
       if (
         location.pathname.replace(/^\//, "") ==
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         location.hostname == this.hostname
       ) {
         var target = $(this.hash);
@@ -124,7 +124,7 @@ $("#quotation-form").on("submit", (e) => {
 
   $.ajax({
     type: "POST",
-    url: "https://hook.eu1.make.com/72rgi7pqorobhi0e1u5xe8lx8jfj271p",
+    url: "https://hook.us1.make.com/2m30jkdevzdtq54whekytaadyxx7ewjc",
     data: {
       userData: {
         firstName,
